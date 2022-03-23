@@ -5,11 +5,12 @@
   "main": "index.js",
   "scripts": {
     "test": "cypress run"
-    
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@faker-js/faker": "^6.0.0",
+    "@testing-library/cypress": "^8.0.2",
     "cypress": "^9.5.2"
   }
 }
