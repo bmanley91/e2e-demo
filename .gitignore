@@ -1,2 +1,7 @@
 node_modules
 cypress/videos
+log
+build
+local.log
+results
+.DS_Store
