@@ -1,0 +1,21 @@
+name: CI
+
+on: push
+
+jobs:
+  verify:
+    name: verify
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+
+      - name: install node 16
+        uses: actions/setup-node@v1
+        with:
+          node-version: 16
+
+      - name: NPM Install
+        run: npm install
+
+      - name: Test
+        run: npm run ci
