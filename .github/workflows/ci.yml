@@ -2,6 +2,10 @@ name: CI
 
 on: push
 
+env:
+  BS_USER: ${{ secrets.BS_USER }}
+  BS_KEY: ${{ secrets.BS_KEY }}
+
 jobs:
   verify:
     name: verify
