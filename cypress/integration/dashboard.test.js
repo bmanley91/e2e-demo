@@ -1,13 +1,13 @@
+import { faker } from '@faker-js/faker';
+
 describe ('Login to Dashboard', () => {
     it ('should greet the user with their username after logging in', () => {
         // Given a user exists
-        const username = 'person';
-        const password = 'abc123';
+        const username = faker.name.firstName();
 
         // When the user logs in to the dashboard page
         cy.loginToPath({
             username,
-            password,
             path: '/dashboard'
         });
 
